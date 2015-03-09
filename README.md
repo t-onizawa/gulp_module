@@ -1,4 +1,4 @@
-# gulpの使い方
+# gulp_moduleの使い方
 
 - node.jsをインストールしてください。
 - sassをインストールしておいてください。 
@@ -73,4 +73,9 @@ gulp img
 gulp sprite
 ```
 
-起動後、読み込むscssファイルに@import parts/spriteしてください
+起動後、読み込むscssファイルに@import parts/spriteしてください。
+下記で、すべてのスプライトCSSが読みこまれます。
+
+```
+ @include sprites($spritesheet-sprites);
+```
