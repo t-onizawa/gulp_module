@@ -14,5 +14,5 @@ img:    # image min
   dest: '../../img/'
 
 sprite: # image sprite
-  base: '../images/sprites/*.png'
+  base: '../images/sprite/*.png'
   dest: '../../img/'
