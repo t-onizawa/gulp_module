@@ -26,7 +26,7 @@ npm install gulp -g
 npm install gulp
 ```
 
-### 初期作成の場合
+### 初期作成（すべてを最新でインストールしたい）の場合
 
 gulpのプラグインをインストールします。
 
