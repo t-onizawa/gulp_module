@@ -47,52 +47,30 @@ path.yml内の読み込み・書き出しパスを確認します。
 
 ## 実行
 
-CSS, JavaScriptタスクは以下で起動します。
-
-pcファイル
-- /javascript/pc
-- /scss/pc
+CSS, JavaScript, imgタスクは以下で起動します。
 
 ```
-gulp pc
-```
-
-spファイル
-- /javascript/sp
-- /scss/sp
-
-```
-gulp sp
+gulp
 ```
 
 
 
-※ 画像のminify化をするときは、/image/pc, sp内に入れ
+
+※ 画像のminify化のみをするときは、/images/内に入れ
 画像用のtaskを起動させます。
 
 画像の圧縮値は都度変えてください。デフォルト設定になっています。
 
-pc (htdocs/base/image/pc → htdocs/img)
- ```
- gulp pc-imgmin
- ```
-
-sp (htdocs/base/image/sp → htdocs/imgSP)
 ```
-gulp sp-imgmin
+gulp img
 ```
 
 
-※ 画像のspriteを作るときは、/image/sprite/pc, sp内に入れ
+※ 画像のspriteを作るときは、/image/sprite/に入れ
 下記taskを起動します。
 
-pc (htdocs/base/image/sprite/pc → htdocs/img)
 ```
-gulp pc-sprite
-```
-
-sp (htdocs/base/image/sprite/sp →  htdocs/imgSP                                                                                                                                                                                                                                                                                                                                                                                                                       )
-```
-gulp sp-sprite
+gulp sprite
 ```
 
+起動後、読み込むscssファイルに@import parts/spriteしてください
